@@ -1,0 +1,465 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\scripts\\mycrud.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\scripts\\mycrud.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|d:\\assignments\\contactappfinalminiprojdemo\\contactappfinalminiprojdemo\\controllers\\contactdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\controllers\\contactdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\scripts\\contactdetailscrud.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\scripts\\contactdetailscrud.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\contactdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\contactdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\models\\contactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\models\\contactdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.ContactDetails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Contacts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\contact\\_editrecordpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\contact\\_editrecordpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\shared\\_addrecordpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\shared\\_addrecordpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\contactdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\contactdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\viewcontacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\viewcontacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\mappings\\contactmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\mappings\\contactmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\views\\user\\viewalladmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\views\\user\\viewalladmins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\webroleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\webroleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Roles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|D:\\Assignments\\ContactAppFinalMiniProjDemo\\contactappfinalminiprojdemo\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49E507C0-2ACF-401C-8A64-A18FEBDC812E}|ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo.csproj|solutionrelative:contactappfinalminiprojdemo\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactDetailsController.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\ContactDetailsController.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Controllers\\ContactDetailsController.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\ContactDetailsController.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Controllers\\ContactDetailsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T17:16:40.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactDetailsCrud.js",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Scripts\\ContactDetailsCrud.js",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Scripts\\ContactDetailsCrud.js",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Scripts\\ContactDetailsCrud.js",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Scripts\\ContactDetailsCrud.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-20T09:35:10.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\ContactDetails\\Index.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\ContactDetails\\Index.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\ContactDetails\\Index.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\ContactDetails\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T04:26:21.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyCrud.js",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Scripts\\MyCrud.js",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Scripts\\MyCrud.js",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Scripts\\MyCrud.js",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Scripts\\MyCrud.js",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAAAOQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-19T04:31:24.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Controllers\\ContactController.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAawIQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T15:06:15.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Content\\Site.css",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Content\\Site.css",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Content\\Site.css",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Content\\Site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-20T14:28:15.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T09:33:48.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAcwKgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T15:46:09.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactDetails.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\ContactDetails.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Models\\ContactDetails.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\ContactDetails.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Models\\ContactDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:05:21.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Models\\Contact.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\Contact.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Models\\Contact.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:05:17.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.Contacts [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Contacts.sql",
+              "ToolTip": "dbo.Contacts [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-17T09:04:51.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.ContactDetails [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.ContactDetails.sql",
+              "ToolTip": "dbo.ContactDetails [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-20T09:50:34.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_EditRecordPartial.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Contact\\_EditRecordPartial.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\Contact\\_EditRecordPartial.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Contact\\_EditRecordPartial.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\Contact\\_EditRecordPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T14:35:34.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_AddRecordPartial.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Shared\\_AddRecordPartial.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\Shared\\_AddRecordPartial.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Shared\\_AddRecordPartial.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\Shared\\_AddRecordPartial.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBZwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T16:38:58.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ViewContacts.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ViewContacts.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\ViewContacts.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ViewContacts.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\ViewContacts.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T13:18:37.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ContactDetails.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ContactDetails.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\ContactDetails.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ContactDetails.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\ContactDetails.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T13:26:05.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-17T09:04:13.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ContactMap.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Mappings\\ContactMap.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Mappings\\ContactMap.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Mappings\\ContactMap.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Mappings\\ContactMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T12:15:25.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Models\\User.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\User.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Models\\User.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowB0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:27:21.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ViewAllAdmins.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ViewAllAdmins.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\ViewAllAdmins.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\ViewAllAdmins.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\ViewAllAdmins.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAEBVwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T11:42:32.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\Edit.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T12:02:32.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\User\\Create.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\User\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T09:51:59.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "dbo.Roles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ContactAppMiniProjDemoDB/True/SqlTable/dbo.Roles.sql",
+              "ToolTip": "dbo.Roles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-09-17T09:04:42.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T10:03:24.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WebRoleProvider.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\WebRoleProvider.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\WebRoleProvider.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\WebRoleProvider.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\WebRoleProvider.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAIwC8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:37:16.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Global.asax.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Global.asax.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Global.asax.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:25:25.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Models\\Role.cs",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Models\\Role.cs",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T09:29:08.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Web.config",
+              "RelativeDocumentMoniker": "ContactAppFinalMiniProjDemo\\Web.config",
+              "ToolTip": "D:\\Assignments\\ContactAppFinalMiniProjDemo\\ContactAppFinalMiniProjDemo\\Web.config",
+              "RelativeToolTip": "ContactAppFinalMiniProjDemo\\Web.config",
+              "ViewState": "AQIAAFgAAAAAAAAAAABBwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-09-17T09:25:16.027Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

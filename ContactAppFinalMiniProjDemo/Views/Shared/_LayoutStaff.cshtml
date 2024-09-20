@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Staff</title>
+
+    @*styling links*@
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/jquery.jqGrid/ui.jqgrid.css" rel="stylesheet" />
+
+    @* first jquery then jqgrid *@
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    
+    <script src="~/Scripts/i18n/grid.locale-en.js"></script>  @*required for pager*@
+    <script src="~/Scripts/jquery.jqGrid.min.js"></script>
+
+
+    @*<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />*@
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+    @*<script src="~/Scripts/modernizr-2.6.2.js"></script>*@
+    @*<script src="~/Scripts/jquery-3.7.1.min.js"></script>*@
+    @*<script src="~/Scripts/bootstrap.min.js"></script>*@
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                @Html.ActionLink("Staff Panel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <span style="color:white">Welcome Staff @User.Identity.Name</span>
+                    @Html.ActionLink("Logout", "Logout", "User")
+
+                }
+
+
+
+
+
+                @*@Html.ActionLink("Staff Panel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    <span style="color:white">Welcome Staff @User.Identity.Name</span>
+                    @Html.ActionLink("Logout", "Logout", "User")*@
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Staff Portal</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
+
+@*Clear your browser cache or use a hard refresh by pressing Ctrl + F5 (on Windows) or 
+Cmd + Shift + R (on Mac) to ensure the latest version of ContactCrud.js is loaded.*@

@@ -1,0 +1,119 @@
+﻿@model IEnumerable<ContactAppFinalMiniProjDemo.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsAdmin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAdmin)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.IsActive)
+                </td>*@
+
+            <td>
+                <!-- Checkbox to toggle isActive status -->
+                <input type="checkbox" class="is-active-checkbox"
+                       data-userid="@item.Id"
+                       @(item.IsActive ? "checked" : "") />
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { userid = item.Id })
+                @Html.ActionLink("View Contacts", "ViewContacts", new {userId= item.Id})
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+@*//ajax for toggling isActive*@
+
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // When the checkbox is changed
+        $(".is-active-checkbox").change(function () {
+            var userId = $(this).data("userid");//Get the user ID from data attribute
+            var isActive = $(this).is(":checked");//Get the checkbox status
+
+        // Make an Ajax call to update the isActive status
+        $.ajax({
+            url: '@Url.Action("UpdateUserStatus", "User")', // Controller action to call
+            type: "POST",
+            data: {
+                id: userId, //send user id
+                isActive: isActive // Send the updated status
+            },
+            success: function (response) {
+                if (response.success) {
+                    alert("User status updated successfully.");
+                } else {
+                    alert("Failed to update user status.")
+                }
+            },
+            error: function () {
+                alert("An error occured.");
+            }
+        });
+
+    });
+
+    });
+
+</script>
+
+

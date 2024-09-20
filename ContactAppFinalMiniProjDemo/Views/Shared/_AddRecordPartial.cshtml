@@ -1,0 +1,36 @@
+﻿@model ContactAppFinalMiniProjDemo.Models.Contact
+
+
+
+<div class="form-horizontal">
+    <h4>Add New Contact</h4>
+    <hr />
+
+    <div class="form-group">
+        <label for="Fname" class="control-label col-md-2">First Name</label>
+        <div class="col-md-10">
+            <input type="text" id="Fname" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="Lname" class="control-label col-md-2">Last Name</label>
+        <div class="col-md-10">
+            <input type="text" id="Lname" class="form-control" />
+        </div>
+    </div>
+
+    @*<div class="form-group">
+        <label for="IsActive">Is Active</label>
+        <input type="checkbox" id="IsActive" name="IsActive" />
+    </div>*@
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="button" value="Add Contact" class="btn btn-primary" onclick="addNewRecord()" />
+        </div>
+    </div>
+</div>
+
+
+

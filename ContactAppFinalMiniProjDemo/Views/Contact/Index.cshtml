@@ -1,0 +1,47 @@
+﻿@model ContactAppFinalMiniProjDemo.Models.Contact
+
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_LayoutStaff.cshtml";
+    }
+
+<div class="container" id="contactList">
+    <p>
+        <div>
+            <button type="button" class="btn btn-outline-success" id="btnAdd">
+                Add New
+            </button>
+        </div>
+    </p>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Is Active</th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="contactsTable">
+<!-- Data comes from AJAX -->
+</tbody>
+    </table>
+</div>
+
+<div id="newRecord" style="display:none" class="container">
+       @Html.Partial("_AddRecordPartial")
+    </div>
+
+<div id="editRecord" style="display:none" class="container">
+    @Html.Partial("_EditRecordPartial")
+</div>
+
+<script src="~/Scripts/MyCrud.js"></script>
+<script>
+    $(document).ready(() => {
+        loadContacts();
+    })
+</script>
