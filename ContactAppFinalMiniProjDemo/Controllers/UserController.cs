@@ -44,29 +44,23 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                     {
                         if (user.IsActive)
                         {
-                            if (user.IsAdmin)
-                            {
-                               /* if (loginVM.Password == user.Password)*/ // do password hashing
-                                if(PasswordHelper.VerifyPassword(loginVM.Password, user.Password))
+                           
+                                if (PasswordHelper.VerifyPassword(loginVM.Password, user.Password))
                                 {
                                     FormsAuthentication.SetAuthCookie(loginVM.UserName, true);
                                     ////storing the user id in the session for contacts and contact details
                                     Session["UserId"] = user.Id;
-                                    return RedirectToAction("Index");
+                                    if (user.IsAdmin)
+                                    {
+                                        return RedirectToAction("Index");
+                                    }
+                                    else
+                                    {
+                                        return RedirectToAction("Index", "Contact");
+                                    }
                                 }
-                            }
-                            else
-                            {
-                                //if (loginVM.Password == user.Password)
-                                if (PasswordHelper.VerifyPassword(loginVM.Password, user.Password))
-                                {
-                                    FormsAuthentication.SetAuthCookie(loginVM.UserName, true);
-                                    //storing the user id in the session for contacts and contact details
-                                    Session["UserId"] = user.Id;
-                                    return RedirectToAction("Index", "Contact");
-                                   // return Content("staff");
-                                }
-                            }
+                            
+
                         }
                     }
                 }
@@ -76,14 +70,14 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
         }
 
-       
+
         [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
-        
+
         [HttpPost]
         public ActionResult Create(User user)
         {
@@ -145,6 +139,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
             }
         }
 
+
         [HttpGet]
         public ActionResult ViewAllAdmins()
         {
@@ -185,9 +180,9 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         [HttpGet]
         public ActionResult ViewContacts(Guid userid)
         {
-            using(var session = NHibernateHelper.CreateSession())
+            using (var session = NHibernateHelper.CreateSession())
             {
-                var userWithContacts = session.Query<User>().FirstOrDefault(u=>u.Id == userid);
+                var userWithContacts = session.Query<User>().FirstOrDefault(u => u.Id == userid);
 
                 if (userWithContacts == null)
                 {
@@ -203,10 +198,10 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         [HttpGet]
         public ActionResult ContactDetails(Guid contactid)
         {
-            using(var session = NHibernateHelper.CreateSession())
+            using (var session = NHibernateHelper.CreateSession())
             {
-                var Contacts = session.Query<Contact>().FirstOrDefault(u=>u.Id==contactid);
-                if(Contacts == null)
+                var Contacts = session.Query<Contact>().FirstOrDefault(u => u.Id == contactid);
+                if (Contacts == null)
                 {
                     return HttpNotFound("User not found");
                 }
@@ -217,16 +212,16 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
 
 
-            [HttpGet]
-            [AllowAnonymous]
-            public ActionResult Logout()
-            {
-                FormsAuthentication.SignOut();
-                Session.Clear();
-                return RedirectToAction("Login");
-            }
-        
-    
+        [HttpGet]
+        [AllowAnonymous]
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            Session.Clear();
+            return RedirectToAction("Login");
+        }
+
+
     }
 }
 

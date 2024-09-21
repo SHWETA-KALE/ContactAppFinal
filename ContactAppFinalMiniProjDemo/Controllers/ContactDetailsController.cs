@@ -30,7 +30,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                 var contactDetails = session.Query<ContactDetails>().Where(cd => cd.Contact.Id == contactId).ToList();
                 var contactDetailsForSearch = contactDetails;
 
-                if (_search && searchField == "Email" && searchOper == "eq")
+                if (_search && searchField == "PhoneNumber" && searchOper == "eq")
                 {
                     contactDetailsForSearch = contactDetails.Where(p => p.PhoneNumber.ToString() == searchString).ToList();  //equality search by name
                 }

@@ -9,8 +9,14 @@
 
 @if (User.IsInRole("Admin"))
 {
-    <p>
-        @Html.ActionLink("Create New", "Create")
+    <!--<p>-->
+    @*@Html.ActionLink("Create New", "Create")*@
+
+    <!--</p>-->
+
+    <p style="margin-top: 65px;">
+        <!-- Add margin-top to push the button down -->
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" }) <!-- Add Bootstrap button styling -->
     </p>
 }
 <table class="table">
@@ -18,9 +24,9 @@
         <th>
             @Html.DisplayNameFor(model => model.UserName)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>*@
         <th>
             @Html.DisplayNameFor(model => model.FName)
         </th>
@@ -45,9 +51,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.UserName)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.FName)
             </td>
@@ -71,8 +77,8 @@
                        @(item.IsActive ? "checked" : "") />
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { userid = item.Id })
-                @Html.ActionLink("View Contacts", "ViewContacts", new {userId= item.Id})
+                @Html.ActionLink("Edit", "Edit", new { userid = item.Id }) |
+                @Html.ActionLink("View Contacts", "ViewContacts", new { userId = item.Id })
 
             </td>
         </tr>

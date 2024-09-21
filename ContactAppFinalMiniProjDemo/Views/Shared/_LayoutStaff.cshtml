@@ -14,7 +14,7 @@
 
     @* first jquery then jqgrid *@
     <script src="~/Scripts/jquery-3.7.1.min.js"></script>
-    
+
     <script src="~/Scripts/i18n/grid.locale-en.js"></script>  @*required for pager*@
     <script src="~/Scripts/jquery.jqGrid.min.js"></script>
 
@@ -26,29 +26,30 @@
     @*<script src="~/Scripts/bootstrap.min.js"></script>*@
 </head>
 <body>
-    <div class="navbar navbar-dark bg-dark navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left side: Application name -->
+            @Html.ActionLink("Staff Panel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
 
-                @Html.ActionLink("Staff Panel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <!-- Center: Welcome message -->
+            <div class="d-flex flex-grow-1 justify-content-center">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <span style="color:white">Welcome Staff @User.Identity.Name</span>
-                    @Html.ActionLink("Logout", "Logout", "User")
-
+                    <span class="navbar-text text-white">Welcome Staff, @User.Identity.Name</span>
                 }
-
-
-
-
-
-                @*@Html.ActionLink("Staff Panel", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    <span style="color:white">Welcome Staff @User.Identity.Name</span>
-                    @Html.ActionLink("Logout", "Logout", "User")*@
             </div>
 
+            <!-- Right side: Logout button -->
+            <div class="d-flex">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("Logout", "Logout", "User", null, new { @class = "btn btn-outline-light" })
+                }
+            </div>
         </div>
-    </div>
+    </nav>
+
+
 
     <div class="container body-content">
         @RenderBody()
@@ -62,5 +63,5 @@
 </body>
 </html>
 
-@*Clear your browser cache or use a hard refresh by pressing Ctrl + F5 (on Windows) or 
-Cmd + Shift + R (on Mac) to ensure the latest version of ContactCrud.js is loaded.*@
+@*Clear your browser cache or use a hard refresh by pressing Ctrl + F5 (on Windows) or
+    Cmd + Shift + R (on Mac) to ensure the latest version of ContactCrud.js is loaded.*@

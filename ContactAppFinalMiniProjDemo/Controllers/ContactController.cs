@@ -24,37 +24,6 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         public ActionResult GetContacts()
         {
 
-
-            // Check if the user is logged in
-            //if (Session["UserId"] == null)
-            //{
-            //    return RedirectToAction("Login", "User");
-            //}
-            //Guid userId = (Guid)Session["UserId"]; // Retrieve userId from the session
-            //using (var session = NHibernateHelper.CreateSession())
-            //{
-            //    // Eager load User and Contacts to avoid lazy loading outside the session
-            //    var user = session.Query<User>()
-            //                      .FetchMany(u => u.Contacts) // Ensure Contacts are fetched eagerly
-            //                      .FirstOrDefault(u => u.Id == userId);
-
-            //    if (user == null)
-            //    {
-            //        return HttpNotFound();
-            //    }
-
-            //    var contacts = user.Contacts.Select(c => new Contact
-            //    {
-            //        Id = c.Id,
-            //        FName = c.FName,
-            //        LName = c.LName,
-            //        IsActive = c.IsActive
-            //    }).ToList();
-
-            //    return Json(contacts, JsonRequestBehavior.AllowGet);
-
-
-
             if (Session["UserId"] == null)
             {
                 return RedirectToAction("Login", "User");
@@ -87,12 +56,6 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         }
 
 
-        //public ActionResult Add(Contact contact)
-        //{
-
-        //}
-
-        [HttpPost]
 
         public ActionResult Add(Contact contact)
         {
@@ -143,87 +106,6 @@ namespace ContactAppFinalMiniProjDemo.Controllers
             }
         }
 
-        //[HttpPost]
-        //public ActionResult Edit(Contact contact)
-        //{
-        //    if (Session["UserId"] == null)
-        //    {
-        //        return new HttpStatusCodeResult(401, "Unauthorized");
-        //    }
-        //    Guid userId = (Guid)Session["UserId"];
-
-        //    using(var session = NHibernateHelper.CreateSession())
-        //    {
-        //        using (var transaction = session.BeginTransaction())
-        //        {
-        //            var existingContact = session.Query<Contact>().SingleOrDefault(c=>c.Id == contact.Id);
-        //            if(existingContact != null)
-        //            {
-        //                existingContact.FName = contact.FName;
-        //                existingContact.LName = contact.LName;
-        //                session.Update(existingContact);
-        //                transaction.Commit();
-        //            }
-        //            return Json(existingContact);
-        //        }
-        //    }
-        //}
-
-        // GET: Contact/GetContact/5
-        //public ActionResult GetContact(Guid id)
-        //{
-        //    if (Session["UserId"] == null)
-        //    {
-        //        return new HttpStatusCodeResult(401, "Unauthorized");
-        //    }
-
-        //    using (var session = NHibernateHelper.CreateSession())
-        //    {
-        //        var contact = session.Query<Contact>().SingleOrDefault(c => c.Id == id);
-        //        if (contact == null)
-        //        {
-        //            return HttpNotFound();
-        //        }
-
-        //        return Json(contact, JsonRequestBehavior.AllowGet);
-        //    }
-        //}
-
-        // POST: Contact/Edit
-        //[HttpPost]
-        //public ActionResult Edit(Contact contact)
-        //{
-        //    if (Session["UserId"] == null)
-        //    {
-        //        return new HttpStatusCodeResult(401, "Unauthorized");
-        //    }
-
-        //    using (var session = NHibernateHelper.CreateSession())
-        //    {
-        //        using (var transaction = session.BeginTransaction())
-        //        {
-        //            var existingContact = session.Query<Contact>().SingleOrDefault(c => c.Id == contact.Id);
-        //            if (existingContact != null)
-        //            {
-        //                existingContact.FName = contact.FName;
-        //                existingContact.LName = contact.LName;
-        //                // You may want to include additional fields if necessary
-
-        //                session.Update(existingContact);
-        //                transaction.Commit();
-        //            }
-        //            else
-        //            {
-        //                return HttpNotFound();
-        //            }
-
-        //            return Json(existingContact); // Or another appropriate result
-        //        }
-        //    }
-        //}
-
-
-
         [HttpPost]
         // Soft delete contact
         public ActionResult UpdateContactStatus(Guid contactId, bool isActive)
@@ -246,8 +128,77 @@ namespace ContactAppFinalMiniProjDemo.Controllers
             }
         }
 
+
         
 
+        [HttpGet]
+        public ActionResult GetContactById(Guid id) // Ensure you use the correct type (e.g., Guid) for your contact ID
+        {
+            if (Session["UserId"] == null)
+            {
+                return new HttpStatusCodeResult(401, "Unauthorized");
+            }
+
+            using (var session = NHibernateHelper.CreateSession())
+            {
+                var contact = session.Get<Contact>(id);
+                if (contact == null)
+                {
+                    return Json(new { success = false, message = "Contact not found" }, JsonRequestBehavior.AllowGet);
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    contact = new
+                    {
+                        contact.Id,
+                        contact.FName,
+                        contact.LName
+                    }
+                }, JsonRequestBehavior.AllowGet);
+                // Return the contact details as JSON
+            }
+        }
+
+
+
+        [HttpPost]
+        public ActionResult EditContact(Contact contact)
+        {
+            if (Session["UserId"] == null)
+            {
+                return new HttpStatusCodeResult(401, "Unauthorized");
+            }
+
+            using (var session = NHibernateHelper.CreateSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    try
+                    {
+                        var existingContact = session.Get<Contact>(contact.Id);
+                        if (existingContact == null)
+                        {
+                            return Json(new { success = false, message = "Contact not found" });
+                        }
+
+                        existingContact.FName = contact.FName;
+                        existingContact.LName = contact.LName;
+
+                        session.Update(existingContact);
+                        transaction.Commit();
+
+                        return Json(new { success = true, message = "Contact edited successfully" });
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        return new HttpStatusCodeResult(500, "Error editing contact: " + ex.Message);
+                    }
+                }
+            }
+        }
 
     }
 }
