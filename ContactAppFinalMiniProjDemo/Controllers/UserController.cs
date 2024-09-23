@@ -39,15 +39,16 @@ namespace ContactAppFinalMiniProjDemo.Controllers
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    var user = session.Query<User>().FirstOrDefault(u => u.UserName == loginVM.UserName);
-                    if (user != null)
+                    if (ModelState.IsValid)
                     {
-                        if (user.IsActive)
+                        var user = session.Query<User>().FirstOrDefault(u => u.UserName == loginVM.UserName);
+                        if (user != null)
                         {
-                           
+                            if (user.IsActive)
+                            {
                                 if (PasswordHelper.VerifyPassword(loginVM.Password, user.Password))
                                 {
-                                    FormsAuthentication.SetAuthCookie(loginVM.UserName, true);
+                                    FormsAuthentication.SetAuthCookie(loginVM.UserName, true); //true indicates persistent cookie
                                     ////storing the user id in the session for contacts and contact details
                                     Session["UserId"] = user.Id;
                                     if (user.IsAdmin)
@@ -59,7 +60,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                                         return RedirectToAction("Index", "Contact");
                                     }
                                 }
-                            
+                            }
 
                         }
                     }
@@ -81,10 +82,15 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         [HttpPost]
         public ActionResult Create(User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
             using (var session = NHibernateHelper.CreateSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
+
                     user.Role.User = user;
                     user.Password = PasswordHelper.HashPassword(user.Password);
 
@@ -98,8 +104,10 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                     }
                     session.Save(user);
                     transaction.Commit();
-                    return RedirectToAction("Login");
                 }
+                return RedirectToAction("Login");
+
+
             }
         }
 
@@ -119,6 +127,10 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         [HttpPost]
         public ActionResult Edit(User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
             using (var session = NHibernateHelper.CreateSession())
             {
                 using (var transaction = session.BeginTransaction())
@@ -135,6 +147,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                         transaction.Commit();
                     }
                 }
+
                 return RedirectToAction("Index");
             }
         }

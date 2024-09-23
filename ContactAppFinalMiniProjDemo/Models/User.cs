@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,14 +10,19 @@ namespace ContactAppFinalMiniProjDemo.Models
     {
         public virtual Guid Id { get; set; }
 
+        [Required] 
         public virtual string UserName { get; set; }
 
+        [Required]
         public virtual string Password { get; set; }
 
+        [Required]
         public virtual string FName { get; set; }
 
+        [Required]
         public virtual string LName { get; set; }
 
+        [Required]
         public virtual string Email { get; set; }
 
         public virtual bool IsAdmin { get; set; }

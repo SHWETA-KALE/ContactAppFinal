@@ -73,20 +73,20 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                             ContactDetail.Email
                         }
                     }).Skip((page - 1) * rows).Take(rows).ToArray()
-                //    rows = (from contactDetail in contactDetails
-                //            orderby sidx + " " + sord
-                //            select new
-                //            {
-                //                cell = new string[]
-                //            {
-                //                contactDetail.Id.ToString(),
-                //                contactDetail.PhoneNumber.ToString(),
-                //                contactDetail.Email
-                //            }
-                //            }).Skip((page - 1) * rows).Take(rows).ToArray()
+                    //    rows = (from contactDetail in contactDetails
+                    //            orderby sidx + " " + sord
+                    //            select new
+                    //            {
+                    //                cell = new string[]
+                    //            {
+                    //                contactDetail.Id.ToString(),
+                    //                contactDetail.PhoneNumber.ToString(),
+                    //                contactDetail.Email
+                    //            }
+                    //            }).Skip((page - 1) * rows).Take(rows).ToArray()
 
 
-                    };
+                };
                 return Json(jsonData, JsonRequestBehavior.AllowGet);
             }
 
@@ -94,6 +94,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
         public ActionResult Add(ContactDetails contactDetails)
         {
+
             //getting contactid for adding contactdetails of that particular contact
             //already stored the contact id in the tempdata 
             Guid contactId = (Guid)TempData.Peek("ContactId"); //retrieving the contact id 
@@ -109,6 +110,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
                         session.Save(contactDetails);
                         transaction.Commit();
+
                         return Json(new { success = true, message = "Contact Detail added successfully" });
                     }
                     catch (Exception ex)
@@ -122,7 +124,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
         }
 
-       
+
         public ActionResult Delete(Guid id)
         {
             using (var session = NHibernateHelper.CreateSession())
@@ -140,7 +142,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                         }
                         return Json(new { success = false, message = "Contact Detail not found" });
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         transaction.Rollback();
                         return new HttpStatusCodeResult(500, "Error deleting contactDetails : " + ex.Message);
@@ -152,6 +154,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
         public ActionResult Edit(ContactDetails contactDetails)
         {
+
             using (var session = NHibernateHelper.CreateSession())
             {
                 using (var transaction = session.BeginTransaction())
@@ -166,9 +169,13 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                             contactDetailToEdit.Email = contactDetails.Email;
                             session.Update(contactDetailToEdit);
                             transaction.Commit();
+
                             return Json(new { success = true, message = "Contact Detail edited successfully" });
                         }
-                        return Json(new { success = false, message = "Contact Detail not found" });
+                        else
+                        {
+                            return Json(new { success = false, message = "Contact Detail not found" });
+                        }
                     }
                     catch (Exception ex)
                     {

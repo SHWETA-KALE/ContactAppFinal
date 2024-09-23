@@ -20,10 +20,10 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         }
 
         //showing contacts of that particular logged in user
+        //DTO is used because it was creating circular reference 
         // GET: Contact
         public ActionResult GetContacts()
         {
-
             if (Session["UserId"] == null)
             {
                 return RedirectToAction("Login", "User");
@@ -89,6 +89,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                         session.Save(contact);
                         transaction.Commit();
 
+
                         return Json(new
                         {
                             Id = contact.Id,
@@ -96,6 +97,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                             LName = contact.LName,
                             IsActive = contact.IsActive
                         });
+
                     }
                     catch (Exception ex)
                     {
@@ -129,7 +131,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
         }
 
 
-        
+
 
         [HttpGet]
         public ActionResult GetContactById(Guid id) // Ensure you use the correct type (e.g., Guid) for your contact ID
@@ -177,17 +179,18 @@ namespace ContactAppFinalMiniProjDemo.Controllers
                 {
                     try
                     {
-                        var existingContact = session.Get<Contact>(contact.Id);
-                        if (existingContact == null)
-                        {
-                            return Json(new { success = false, message = "Contact not found" });
-                        }
+                            var existingContact = session.Get<Contact>(contact.Id);
+                            if (existingContact == null)
+                            {
+                                return Json(new { success = false, message = "Contact not found" });
+                            }
 
-                        existingContact.FName = contact.FName;
-                        existingContact.LName = contact.LName;
+                            existingContact.FName = contact.FName;
+                            existingContact.LName = contact.LName;
 
-                        session.Update(existingContact);
-                        transaction.Commit();
+                            session.Update(existingContact);
+                            transaction.Commit();
+                        
 
                         return Json(new { success = true, message = "Contact edited successfully" });
                     }
@@ -203,5 +206,5 @@ namespace ContactAppFinalMiniProjDemo.Controllers
     }
 }
 
-    
+
 

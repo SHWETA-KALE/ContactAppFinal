@@ -15,8 +15,8 @@
     <!--</p>-->
 
     <p style="margin-top: 65px;">
-        <!-- Add margin-top to push the button down -->
-        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" }) <!-- Add Bootstrap button styling -->
+        
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" }) 
     </p>
 }
 <table class="table">
@@ -92,7 +92,7 @@
 <script>
     $(document).ready(function () {
         // When the checkbox is changed
-        $(".is-active-checkbox").change(function () {
+        $(".is-active-checkbox").change(function () {  // change is an event listener
             var userId = $(this).data("userid");//Get the user ID from data attribute
             var isActive = $(this).is(":checked");//Get the checkbox status
 
