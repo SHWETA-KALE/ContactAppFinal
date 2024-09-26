@@ -134,7 +134,7 @@ namespace ContactAppFinalMiniProjDemo.Controllers
 
 
         [HttpGet]
-        public ActionResult GetContactById(Guid id) // Ensure you use the correct type (e.g., Guid) for your contact ID
+        public ActionResult GetContactById(Guid id) 
         {
             if (Session["UserId"] == null)
             {
